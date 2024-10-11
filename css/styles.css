@@ -4165,7 +4165,7 @@ textarea.form-control-lg {
   --bs-card-height: ;
   --bs-card-color: ;
   --bs-card-bg: #fff;
-  --bs-card-img-overlay-padding: 1rem;
+  --bs-card--overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
   display: flex;
@@ -4261,7 +4261,7 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
 }
 
-.card-img-overlay {
+.card--overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -8130,7 +8130,7 @@ textarea.form-control-lg {
   box-shadow: 0px 0 1rem 0px rgba(0, 0, 0, 0.15);
   /* background: linear-gradient(185deg, #8378AA, #8378AA, #88adc3, #90BEC0, #90BEC0); */
   background: linear-gradient(185deg, #58469A, #8378AA, #88adc3, #D0E1E2, #FCFFFF);
-  /* background-image: url("../assets/img/fondo_sabermas.png");
+  /* background-image: url("../assets/fondo_sabermas.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10993,7 +10993,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-image: url("/assets/img/gradiantev4.png");
+  background-image: url("/assets/gradiantev4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
