@@ -10993,7 +10993,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-image: url("/assets/gradiantev4.png");
+  background-image: url("assets/gradiantev4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
