@@ -1,0 +1,31 @@
+
+
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 20px 0 !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    background: #ffffffa3 !important;
+}
+thead th, tr{
+    padding: 8px 0px !important;
+    border-top: 1px solid #bcbcbc !important;
+    font-size: 14px !important;
+    color: #333 !important;
+    text-transform: uppercase !important;
+    background: #ffffff00 !important;
+}
+
+table tbody td {
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    color: #5c5c5c;
+}
+
+.notas {
+    font-size: 12px !important;
+    color: #777 !important;
+    margin-top: 10px !important;
+}

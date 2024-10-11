@@ -1,0 +1,364 @@
+a{
+    color: #000 ;
+}
+.navbar{
+    flex-direction: column;
+}
+.fixed-top{
+    position: static !important;
+}
+.font-size-10px{
+  font-size: 10px !important;
+}
+.row-equidata--categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4rem 1rem 0 1rem;
+}
+.masthead {
+    padding-top: 1rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background-image: url("../assets/img/gradiantev3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+ .masthead h1, .masthead .h1 {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 992px) {
+    .masthead {
+      height: auto;
+      min-height: 40rem;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+    }
+    .masthead p {
+      font-size: 1.15rem;
+    }
+    .masthead h1, .masthead .h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    .masthead h1, .masthead .h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+.categorias-cubo {
+    /* flex: 1 1 50px; */
+    height: 50px;
+    margin: 62px;
+    background-color: transparent !important;
+    border: 0 !important;
+    text-align: center;
+    padding: 20px;
+}
+.categorias-cubo video{
+    width: 250px !important;
+    transition: all 0.2s ease-in-out;
+}
+@media (max-width: 450px)  {
+  .categorias-cubo{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .categorias-cubo video{
+    width: 100%;
+}
+
+}
+.categorias-cubo iframe{
+  width: 100% !important;
+  transition: all 0.2s ease-in-out;
+}
+.categorias-cubo:hover video{
+    border-radius: 10%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        flex-basis: 100%; /* Ocupa el 100% del ancho disponible */
+    }
+}
+@media (max-width: 350px){
+  .categorias-cubo{
+    margin: 62px 0px 62px 0px;
+  }
+}
+
+.categorias-listas li a{
+  font-size: 12px !important;
+}
+
+.descipcion-categoria{
+    width: 100%;
+    height: auto;
+}
+
+/* cajainfo para iconos izquierdos */
+.caja__info-izqui{
+    opacity: 1;
+    display: none;
+    position: absolute;
+    left: 3rem;
+    top: 0;
+    background-color: #92175691;
+    text-align: justify !important;
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 12px;
+    z-index: 1000;
+    width: 20rem;
+    height: auto;
+    min-height: 280px;
+    transition: all 0.7s ease;
+}
+.tooltips:hover .caja__info-izqui {
+  display: inline-block;
+  transition: all 2s ease;
+  
+}
+.tooltips .caja__info-izqui:hover{
+background-color: #921756 !important;
+transition: all 0.1s ease !important;
+
+}
+.hvr-underline-from-center {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .hvr-underline-from-center h4::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #98AEDA; 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+    width: 0;
+  }
+
+  .hvr-underline-from-center h4::after {
+    width: 100%;
+    animation: anisubrayado 2s ease-in-out;
+
+  }
+  @keyframes anisubrayado {
+    0%{
+            width: 0%;
+            transition: width 0.3s ease-in-out;    
+    }
+    100%{
+        width: 100%;
+            transition: width 0.3s ease-in-out;  
+    }
+  }
+
+
+
+/* chat */
+.mapa{
+  width: 100%;
+  height: 25rem;
+}
+.mapa iframe{
+  width: 100%;
+  height: 100%;
+
+}
+.graficas{
+  width: 100%;
+}
+.graficas img{
+  width: 100%;
+}
+.base-grafica-mapa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 5rem;
+}
+@media (max-width: 365px) {
+  .base-grafica-mapa{
+    padding: 50px 10px 10px 10px;
+  }
+}
+
+.base-datos, .graficas-mapa {
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+}
+.base-datos{
+  max-height: 546px; /* Altura máxima de la tabla */
+  overflow-x: auto; /* Scroll horizontal */
+  overflow-y: auto; /* Scroll vertical */
+  border: 1px solid #ddd; /* Borde alrededor del contenedor */
+}
+
+/* Estilos personalizados para scrollbar */
+.base-datos::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar vertical */
+  height: 12px; /* Ancho del scrollbar horizontal */
+}
+.base-datos::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la barra */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 3px solid #f2f2f2; /* Borde alrededor de la barra */
+}
+.base-datos::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color de la barra al pasar el mouse */
+}
+.base-datos::-webkit-scrollbar-track {
+  background-color: #f2f2f2; /* Color de fondo de la pista del scrollbar */
+  border-radius: 10px;
+}
+
+.graficas-mapa {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    flex-direction: column;
+    height: 190vh;
+}
+
+.mapa, .graficas {
+  flex: 1 1 48%;
+  box-sizing: border-box;
+}
+
+.ficha-tecnica {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .base-datos {
+      flex: 1 1 40%;
+  }
+  .ficha-tecnica {
+    flex: 1 1 40%;
+}
+
+  .graficas-mapa {
+      flex: 1 1 50%;
+  }
+
+  .ficha-tecnica {
+      margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .mapa, .graficas {
+      flex: 1 1 100%;
+  }
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 15px rgba(64, 64, 64, 0.1);
+  background-color: #fff;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+thead th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+  
+  
+  /* animacion del scroll  */
+  .hero-scroll-gallery__container--animate-hero{
+    animation: spring-1ea65815 .9s cubic-bezier(.45,.05,.55,.95) .5s forwards;
+  }
+  
+  @keyframes spring-1ea65815 {
+    0% {
+        transform: translateX(0)
+    }
+  
+    25% {
+        transform: translateX(-25px)
+    }
+  
+    50% {
+        transform: translateX(20px)
+    }
+  
+    75% {
+        transform: translateX(0)
+    }
+  
+    to {
+        transform: translateX(0)
+    }
+  }
+
+/* tooltips videos */
+.tooltip-video{
+  visibility: hidden; 
+  background: linear-gradient(90deg, #361c539c, #3f1c53a3, #88adc3b5, #98c1e8bd, #83b7f8b5);
+  color: white; 
+  text-align: center; 
+  padding: 5px; 
+  border-radius: 4px; 
+  position: absolute; 
+  bottom: 100%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1;
+}
+
+/* titulo redessociales multimedia */
+.titulo_redes--videos{
+  background: linear-gradient(90deg, #98aeda00, #abb8d4, #f1f1f1, #abb8d4, #98aeda00);
+  box-shadow: 0px 11px 1rem 0px rgba(0, 0, 0, 0.15);
+}
